@@ -7,6 +7,6 @@ Id : 20182482
 Section : 08
 
 
-Name :
-ID :
-Section :
+Name : Mariam Malik Mushtaq
+ID : 202009626
+Section : 02
