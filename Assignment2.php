@@ -40,3 +40,41 @@ $records = $data['results'];
             align-items: center;
             min-height: 100vh;
         }
+ /* Main Container */
+        main.container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            overflow-x: auto; /* Ensure table scrolls horizontally if needed */
+        }
+
+        /* Title */
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: grey;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        /* Table Header */
+        table thead {
+            background-color: grey;
+            color: black;
+        }
+        table thead th {
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+            white-space: nowrap; /* Prevent headers from breaking into multiple lines */
+        }
