@@ -16,3 +16,6 @@ $data = json_decode($response, true);
 if (!isset($data['results'])) {
     die("No records found.");
 }
+// Extract the results
+$records = $data['results'];
+?>
