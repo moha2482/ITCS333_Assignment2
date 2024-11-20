@@ -102,7 +102,21 @@ $records = $data['results'];
         }
 
 
-        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            main.container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            table thead th, table tbody td {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
 
 
 
