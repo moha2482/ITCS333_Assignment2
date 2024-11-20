@@ -119,5 +119,53 @@ $records = $data['results'];
         }
 
 
+        /* Overflow Handling */
+        main.container::-webkit-scrollbar {
+            height: 8px; /* Horizontal scrollbar height */
+        }
+
+        main.container::-webkit-scrollbar-thumb {
+            background: #4CAF50;
+            border-radius: 10px;
+        }
+
+        main.container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+
+        </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Student Nationalities in Bachelor Programs</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Semester</th>
+                    <th>The Programs</th>
+                    <th>Nationality</th>
+                    <th>Colleges</th>
+                    <th>Number of Students</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($records as $record): ?>
+                    <tr>
+                        <td><?= htmlspecialchars($record['year']) ?></td>
+                        <td><?= htmlspecialchars($record['semester']) ?></td>
+                        <td><?= htmlspecialchars($record['the_programs']) ?></td>
+                        <td><?= htmlspecialchars($record['nationality']) ?></td>
+                        <td><?= htmlspecialchars($record['colleges']) ?></td>
+                        <td><?= htmlspecialchars($record['number_of_students']) ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
+
 
 
