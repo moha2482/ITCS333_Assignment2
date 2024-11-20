@@ -78,4 +78,32 @@ $records = $data['results'];
             font-weight: bold;
             white-space: nowrap; /* Prevent headers from breaking into multiple lines */
         }
+
+
       /* This Part is done by mohammad
+
+
+
+         /* Table Body */
+         table tbody tr {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.2s;
+        }
+
+        table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        table tbody td {
+            padding: 15px;
+            text-align: left;
+            white-space: nowrap; /* Prevent cell content from breaking */
+        }
+
+
+        
+
+
+
+
